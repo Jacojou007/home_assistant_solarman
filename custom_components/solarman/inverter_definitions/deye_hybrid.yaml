@@ -27,6 +27,15 @@ parameters:
       registers: [0x00BB]
       icon: 'mdi:solar-power'
 
+      - name: "PV3 Voltage"
+      class: "voltage"
+      state_class: "measurement"
+      uom: "V"
+      scale: 0.1
+      rule: 1
+      registers: [0x0071]
+      icon: 'mdi:solar-power'
+
     - name: "PV1 Voltage"
       class: "voltage"
       state_class: "measurement"
